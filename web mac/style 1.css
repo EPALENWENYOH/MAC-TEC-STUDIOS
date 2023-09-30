@@ -1,0 +1,12 @@
+p.title{
+
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+}
+
+p.content{
+    font-size:12px;
+    color:red;
+    text-indent:20px;
+}

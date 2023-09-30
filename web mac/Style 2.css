@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 7px;
+} 
+
+.main{
+    min-height: 85vh;
+    width: 100%;
+    background-image: url(images/r2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.reel {
+  gap: var(--gap);
+  display: grid;
+  --gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 39%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: var(--gap);
+}
+
+.reel li{
+    display: inline-block;
+}
+.reel li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding: 15px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+}
+.reel li a:hover{
+    background-color: antiquewhite;
+    color: #009688;
+    width: 100%;
+    border: 2px solid #009688;
+    background: transparent;
+    transition: 0.5s;
+    animation: alternate;
+}
+.title2{
+  background-image: url(images/GRAPHIC.png);
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.reel li.active a{
+    background: transparent;
+    color: #009688; 
+    border: 2px solid #009688;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+
+}
+.title{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+.title h1{
+    font-size: 50px;
+    margin-top: 80px;
+    color: aqua;
+}
+.title h2{
+    font-size: 20px;
+    margin: 30px;
+    color: aqua;
+    float: ;
+}
+.title h3{
+    font-size: 20px;
+    margin: 20px;
+    color: aqua;
+    float: ;
+}
+c
+body{
+    background-color: rgb(4, 46, 102);
+}
+.images img {
+    background-color: white;
+    width: 400px;  
+    border-radius: 10px;
+    float: left;
+    margin: 15px;
+  }
+.title2  h4{
+    float: center;
+    font-size: 30px;
+    margin-top: 60px;
+    color: aqua;
+   
+}
+.title2 h5{
+    margin: 50px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #ecde13;
+    float: right;
+    font-size: 30px;
+    margin-top: 150px;
+}
+.title p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
+
+ 
